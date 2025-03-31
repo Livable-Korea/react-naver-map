@@ -1,6 +1,6 @@
 export interface InitParams {
-  ncpClientId: string;
-  submodules?: Submodule[]
+  ncpKeyId: string;
+  submodules?: Submodule[];
   onLoad?: VoidFunction;
   onError?: VoidFunction;
 }
@@ -16,4 +16,4 @@ export type UseNaverMapInit = (params: InitParams) => InitResult;
  * naver map submodule
  * @link https://navermaps.github.io/maps.js.ncp/docs/tutorial-4-Submodules.html
  */
-export type Submodule = "panorama" | "geocoder" | "drawing" | "visualization"
+export type Submodule = "panorama" | "geocoder" | "drawing" | "visualization";
